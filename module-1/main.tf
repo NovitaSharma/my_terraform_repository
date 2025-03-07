@@ -8,6 +8,8 @@ provider "aws" {
 # }
 
 
+#ec2 instance creation
+
 data "aws_ami" "latest_amazon_linux" {
   most_recent = true   # Gets the latest available AMI
   owners      = ["amazon"]   # Ensures it's an official AWS AMI
